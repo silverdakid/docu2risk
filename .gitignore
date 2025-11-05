@@ -1,0 +1,4 @@
+node_modules/
+controleur/util/*.js
+controleur/util/*.js.map
+data/*

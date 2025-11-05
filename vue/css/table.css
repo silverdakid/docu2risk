@@ -1,0 +1,157 @@
+/* Tableau d'index pour les non admin */
+
+.tableHistory {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #B9B9B9;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+}
+
+.tableHistory tbody tr td,
+.tableHistory thead tr th {
+    border: 1px solid #ccc;
+}
+
+.tableHistory thead {
+    background-color: aliceblue;
+}
+
+.tableHistory tbody {
+    background-color: white;
+}
+
+/* Tableau des analyses */
+
+.analysisTable {
+    text-align: left !important;
+}
+
+.analysisTable>thead {
+    background-color: #ebebeb;
+}
+
+.analysisTable>thead>tr>th {
+    padding: 10px 10px 10px 50px;
+}
+
+.analysisTable>tbody>tr>td {
+    padding: 10px 10px 10px 10px;
+}
+
+/* Tableau d'index pour les admins */
+.tableContainer {
+    background-color: #E5F6FF;
+    box-shadow: 0px 1px 23.8px -4px #2b7fb05b;
+    margin-top: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.tableAdmin {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    /* height: 90%; */
+}
+
+
+.tableAdmin tbody tr td,
+.tableAdmin thead tr th {
+    border-right: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.tableAdmin tbody tr :last-child,
+.tableAdmin thead tr :last-child {
+    border-right: 0;
+}
+
+.tableAdmin tbody {
+    vertical-align: top;
+}
+
+/* Peu esthétique mais on suit la maquette */
+.leftAlign2N tbody tr :nth-child(odd) {
+    text-align: left !important;
+}
+
+.leftAlign2N tbody tr td {
+    padding: 10px;
+}
+
+.leftAlign2N thead tr th {
+    font-size: 25px;
+}
+
+.grayWhite thead {
+    background-color: #bebebe !important;
+}
+
+.grayWhite tbody {
+    background-color: white;
+}
+
+.tableFiles {
+    text-align: left;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.25)
+}
+
+.tableFiles thead tr th {
+    padding: 10px;
+}
+
+.tableFiles tbody tr td {
+    padding: 10px;
+}
+
+.tableFiles:empty {
+    visibility: hidden;
+}
+
+.padBot tr th {
+    padding-bottom: 20px !important;
+}
+
+.scrollTable {
+    max-height: 60vh !important;
+    overflow-y: scroll !important;
+}
+
+.scrollTable table {
+    height: 30em;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.scrollTable thead {
+    background-color: #E5F6FF;
+    position: sticky;
+    inset-block-start: -12px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d0dfe7;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(126, 126, 126);
+}

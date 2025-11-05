@@ -1,0 +1,47 @@
+
+
+h1 {
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #000;
+    color: #000;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    width: 100%;
+}
+
+.bottomSeparator {
+    border: 0;
+    border-bottom: 3px solid black;
+}
+
+.circle {
+    width: 20vw;
+    height: 20vw;
+    background-color: #2B80B0;
+    border-radius: 50%;
+}
+
+.topLeft {
+    position: fixed;
+    top: -20;
+    left: -200;
+}
+
+.bottomRight {
+    position: fixed;
+    bottom: -150;
+    right: -150;
+}
+
+.errorLabel {
+    color: red;
+    font-style: italic;
+}

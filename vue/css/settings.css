@@ -1,0 +1,49 @@
+.settingsDiv {
+    display: grid;
+    font-size: 28px;
+    align-items: center;
+    grid-template-columns: 2fr 8fr 1.5fr;
+
+}
+
+.settingsDiv label {
+    min-width: max-content;
+}
+
+.settingsUpperDiv {
+    background: #F8FCFF;
+    box-shadow: 0px 1px 23.8px -4px #D7D7D7;
+    border-radius: 20px;
+    width: 40%;
+    margin: auto;
+    margin-top: 60px;
+    min-width: max-content;
+}
+
+.settingsButtonDiv {
+    display: grid;
+    grid-template-columns: 1fr 0.64fr 1fr;
+}
+
+.settingsButton {
+    padding: 0 10px 0 10px;
+    font-size: 25px !important;
+    border: 0;
+    cursor: pointer;
+}
+
+.containerEditButton {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.errorMsg {
+    color: red;
+    font-style: italic;
+}
+

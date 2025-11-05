@@ -1,0 +1,18 @@
+.editPassDiv {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    font-size: 28px;
+    row-gap: 10px;
+    /* justify-items: center; */
+}
+
+.infoPassDiv {
+    display: flex;
+    justify-self: center;
+}
+
+/* On veut plus d'espace sous les inputs */
+.searchBar:nth-child(2n){
+    margin-bottom: 20px !important;
+}

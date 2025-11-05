@@ -1,0 +1,249 @@
+.inputLogin {
+    background-color: #2B80B0;
+    width: 100%;
+    min-height: 35px;
+    font-size: 24px;
+    font-weight: 400;
+    border: 0.1px solid #1c506e;
+}
+
+.inputLogin:hover {
+    cursor: pointer;
+}
+
+.inputLogin:active {
+    background-color: #37a2e0;
+}
+
+.userpassInput {
+    width: 100%;
+    font-size: 14pt;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+.userpassInput:focus {
+    border: 0;
+    outline: 0;
+}
+
+.fileInputDiv {
+    background-color: rgba(217, 217, 217, 0.48);
+    outline: 2px dashed white;
+    min-height: 145px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.fileInput {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* On fait en sorte d'occuper tous l'espace de la div parente pour pouvoir y déposer un fichier */
+.fileInputDiv:hover {
+    background-color: darkgray;
+}
+
+.fileInput+label {
+    font-size: 1.25em;
+    font-weight: 700;
+    display: inline-block;
+    transition: all 1s ease;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fileInput+label.top {
+    position: absolute;
+    top: -33px;
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.fileInput+label:hover:not(.top) {
+    background-color: gray;
+}
+
+.labelCover {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.depotValiderInput {
+    background-color: rgb(0, 143, 161);
+    cursor: pointer;
+}
+
+.depotValiderInput:hover {
+    background-color: rgb(84, 116, 121);
+}
+
+.fileSelected {
+    color: blue;
+}
+
+.padAroundLil {
+    background-color: #BFBFBF;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+}
+
+.searchBar {
+    width: 30%;
+    height: 35px;
+    outline: 0;
+    border-radius: 6px;
+    padding-left: 10px;
+    border: 1.5px solid black;
+}
+
+.searchBar:focus {
+    outline: 0;
+    border: 1.5px solid lightblue;
+}
+
+.editInputDiv {
+    border-radius: 8px;
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #2B80B0;
+    cursor: pointer;
+}
+
+
+
+.editInput {
+    content: "";
+    font-size: 0;
+    line-height: 0;
+    border: 0;
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+}
+
+.editInputEdit {
+    background: url("./assets/edit.svg") center / contain no-repeat;
+}
+
+.editInputCheck {
+    background: url("./assets/check.svg") center / contain no-repeat !important;
+}
+
+.editInputCross {
+    background: url("./assets/cross.svg") center / contain no-repeat !important;
+}
+
+.editInputDiv:hover {
+    background-color: #37a2e0;
+}
+
+.settingsTextInput {
+    border-radius: 8px;
+    background-color: #EAEFF3;
+    border: 0;
+    outline: 0;
+    color: #000;
+    font-size: 28px;
+    width: 90%;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.editInputEmpty {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.settingsTextInput:focus {
+    outline: 2px solid #37a2e0;
+}
+
+.colon {
+    margin-right: 30px;
+}
+
+.larger {
+    font-size: 17px;
+}
+
+.inputImage {
+    width: 40px;
+    height: 30px;
+    display: inline;
+    border: 0px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0);
+}
+
+.fleche {
+    background: no-repeat center url("./assets/rightarrow.svg");
+    background-size: 30px auto;
+}
+
+.history {
+    background: no-repeat center url("./assets/history.svg");
+    background-size: 30px auto;
+}
+
+.block {
+    background: no-repeat center url("./assets/block.svg");
+    background-size: 30px auto;
+}
+
+.download {
+    background: no-repeat center url("./assets/download.svg");
+    background-size: 30px auto;
+}
+
+.question-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: calc(100% - 13px);
+}
+
+.question-input.expected {
+    background-color: #FAA0A0;
+}
+
+.question-input.expected:focus {
+    background-color: #fdb1b1;
+}
+
+.question-input.answered {
+    background-color: #C1E1C1;
+}
+
+.question-input.answered:focus {
+    background-color: #dcfcdc;
+}
+
+.question-input.optional {
+    background-color: #f67828;
+}
+
+.question-input.optional:focus {
+    background-color: #ff8a41;
+}
+
+.question-input.ia {
+    background-color: #FDFD96;
+}
+
+.question-input.ia:focus {
+    background-color: #ffe1b5;
+}

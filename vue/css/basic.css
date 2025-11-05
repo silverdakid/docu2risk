@@ -1,0 +1,506 @@
+body {
+    background-color: #F5F7F8;
+    font-family: Merriweather Sans;
+}
+
+.centerLogin {
+    width: 30%;
+    height: 70%;
+    /* 50% pour centrer verticalement */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.centerArea {
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.indexTitle {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.indexName {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.indexWelcome {
+    text-align: center;
+}
+
+
+.aButton {
+    display: flex;
+    background-color: #2B80B0;
+    border-radius: 8px;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 0 10px 0px 10px;
+    cursor: pointer;
+    border: 0;
+}
+
+.fullWidth {
+    width: 100% !important;
+}
+
+.halfWidth {
+    width: 50%;
+}
+
+.thirdWidth {
+    width: 33%;
+}
+
+.fifthWidth {
+    width: 20%
+}
+
+.tenthWidth {
+    width: 10%;
+}
+
+.right {
+    float: right;
+}
+
+.aButton:hover {
+    background-color: #37a2e0;
+}
+
+.aButton:disabled {
+    background-color: #8E8E8E;
+    cursor: default;
+}
+
+.infoText {
+    font-size: 20px;
+}
+
+.littleText {
+    font-size: 14px;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    background: url("./assets/info.svg") center / contain no-repeat;
+    color: rgba(0, 0, 0, 0);
+    cursor: default;
+    width: 20px;
+    margin-left: 5px;
+}
+
+.tooltip .tooltiptext,
+.hoverButtonText {
+    margin-left: 5px;
+    visibility: hidden;
+    background-color: #D9D9D9;
+    color: black;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    margin-right: 37px !important;
+    /* 
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center; */
+}
+
+.tooltip .tooltipfiles {
+    width: 150px;
+}
+
+.tooltip .tooltippass {
+    width: 300px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.hoverButtonText {
+    visibility: visible;
+    top: 45px;
+}
+
+.padAround {
+    padding: 50px;
+}
+
+.padSides {
+    padding: 10px 50px 10px 50px;
+}
+
+.padTOP {
+    padding-top: 2%;
+}
+
+.smaller {
+    font-size: 15px !important;
+}
+
+.grid1fr {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: left;
+}
+
+.gridAnalysis {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    text-align: right;
+    row-gap: 40px;
+}
+
+.selfLeft {
+    justify-self: left;
+}
+
+#filesDiv {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+#filesDiv div {
+    text-align: center;
+    word-break: break-all
+}
+
+
+.absoluteHidden {
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+}
+
+
+.redBack {
+    background-color: red;
+}
+
+.redBack:hover {
+    background-color: lightcoral;
+}
+
+.crosssign {
+    display: inline-grid;
+    place-content: center;
+    aspect-ratio: 1;
+    min-inline-size: 1.25em;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.crosssign::before {
+    content: "\D7";
+    color: red;
+    font-weight: bold;
+}
+
+.absoluteTopRight {
+    position: relative;
+    right: -93px;
+    top: -73px;
+}
+
+.spaceButton {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+}
+
+.checkBox {
+    margin-right: 15px;
+    accent-color: #8E8E8E;
+    filter: drop-shadow(0px 3px 5px rgba(46, 46, 66, 0.20));
+    width: 16px;
+    height: 16px;
+}
+
+.errorAnalyse {
+    margin-right: auto;
+    align-self: center;
+}
+
+.blue {
+    background-color: #2B80B0 !important;
+}
+
+.flexResult {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flexResult div img {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 100%;
+    overflow: visible;
+
+    float: left;
+    margin-right: 5px;
+}
+
+.flexResult div h2 {
+    display: inline;
+}
+
+.flexResult div p {
+    display: inline;
+}
+
+.madAround {
+    margin: 50px;
+}
+
+.noMarginExceptBot {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.gray {
+    background-color: #505050 !important;
+}
+
+.fitHeight {
+    width: 830px;
+    height: 243px;
+}
+
+.gridResult {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circleResult {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+.scoreOutput {
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.scoreOutput span {
+    margin-left: 5px;
+    font-size: 30px;
+}
+
+.resultDiv {
+    background: #505050;
+    box-shadow: 0px 1px 23.8px -4px #d7d7d7;
+    border-radius: 8px;
+    width: 40%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 60px;
+    min-width: max-content;
+    color: white;
+    font-size: 50px;
+}
+
+.greenResult {
+    background: #24FF00;
+}
+
+.green {
+    color: #24FF00;
+}
+
+.orangeResult {
+    background: #ffbb00;
+}
+
+.orange {
+    color: #ffbb00;
+}
+
+.redResult {
+    background: #ff0000;
+}
+
+.red,
+.redColor {
+    color: rgb(255, 0, 0);
+}
+
+.dispButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.none {
+    justify-self: left;
+}
+
+.headPos {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.coverModal {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    width: 10%;
+    position: absolute;
+    right: 0;
+}
+
+.modal {
+    background-color: #BFBFBF;
+    padding: 20px;
+    text-align: center;
+    max-width: fit-content;
+    margin: auto;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 12;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: space-around;
+}
+
+.answers-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.scrollable {
+    overflow-y: auto;
+    max-height: 82vh;
+}
+
+.answers-questions {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    align-items: start;
+    justify-content: end;
+}
+
+.answers-questions>label {
+    margin: 10px;
+    grid-column: span 2;
+    max-width: 81%;
+}
+
+
+.answers-questions>span>input[type="text"] {
+    margin-right: auto;
+}
+
+.answers-button {
+    margin: 0;
+    margin-top: 10px;
+    height: fit-content;
+    width: 100%;
+}
+
+.answers-button>* {
+    margin: 0;
+    width: fit-content;
+    height: inherit;
+    font-size: max(20px, 1.5vw);
+}
+
+.containerEditAnswer {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    flex-grow: 1;
+    min-width: 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerEditAnswer .editInputDiv {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 5px;
+}
+
+.question-list-score {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: #BFBFBF;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: max-content;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.adapt {
+    width: 91% !important;
+}

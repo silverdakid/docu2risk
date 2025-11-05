@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: Merriweather Sans;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 56.25% */
+}
+
+/* Bandeau de navigation principal */
+
+.navbar {
+    /* overflow: hidden; */
+    width: 100%;
+    background-color: #2B80B0;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+
+/* Flèche, accès au bandeau de navigation secondaire */
+.select-btn {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.select-btn .arrow-dwn {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.select-btn.open .arrow-dwn {
+    transform: rotate(-180deg);
+}
+
+/* Bande de navigation secondaire */
+.select-btn .subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #2B80B0;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+    left: 0;
+    top: 81px;
+    width: 100%;
+    z-index: 1;
+    height: 50px;
+}
+
+/* Éléments du bandeau de navigation secondaire */
+.select-btn .subnav-content>a {
+    background-color: #1F74A4;
+    border-radius: 8px;
+    width: 50%;
+    height: 75%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+}
+
+.subnav-content>a:hover {
+    background-color: #2494d4;
+}
+
+.select-btn.open .subnav-content {
+    display: grid;
+    grid-auto-flow: column;  
+    justify-items: center;
+}
+
+/* Bandeau de navigation tertiaire */
+.account-menu {
+    position: relative;
+}
+
+.account-menu .subnav-content {
+    display: none;
+}
+
+.account-menu.open .subnav-content {
+    position: absolute;
+    background-color: #2B80B0;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+    right: 0;
+    top: 81px;
+    width: 100%;
+    display: block;
+
+}
+
+/* Contenu bandeau tertiaire */
+.userInfo {
+    padding: 0 8px 0 12px;
+    overflow: hidden;
+    /* Pour les infos trop longues */
+    margin-bottom: 0;
+}
+
+.userInfo>li {
+    background-color: rgba(30, 117, 166, 0.88);
+    list-style: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 8px;
+    margin-bottom: 10%;
+}
+
+.userInfo b {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.userInfo b::after {
+    content: ":";
+    position: absolute;
+    right: 10px;
+}
+
+.subnav-content > hr {
+    margin: 0 10px 10px 10px;
+    border: 1px solid black;
+}
+
+.buttonUser {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 5px;
+    padding: 0px 10px 0px 9px;
+}
+
+.red {
+    color: #F00;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.userInfoInput {
+    background-color: rgba(48, 109, 143, 0.88);
+    cursor: pointer;
+    border-radius: 8px;
+    border: 0;
+}
+
+
+.settings {
+    content: "";
+    width: 100%;
+    background: url("./assets/gear.svg") center / contain no-repeat;
+    background-color: rgba(48, 109, 143, 0.88);
+}
+
+.accountMenu {
+    /* CSS pour faire en sorte qu'on comprenne qu'il faille cliquer sur Account */
+    text-decoration: underline;
+}
