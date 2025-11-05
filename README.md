@@ -1,5 +1,10 @@
 # Docu2Risk - Automated Financial Inherent Risk Analysis Application
 
+<br>
+<p align="center">
+  <video src="demo.mp4" controls="controls" style="max-width: 720px;"></video>
+</p>
+
 ## Project Context
 
 It is important to note that **Docu2Risk is a university project** carried out by a group of five people as part of our studies in Computer Science at the IUT of Metz.
