@@ -2,7 +2,9 @@
 
 <br>
 <p align="center">
-  <video src="demo.mp4" controls="controls" style="max-width: 720px;"></video>
+  <a href="https://www.youtube.com/watch?v=TNwnS5tJ_80" target="_blank">
+    <img src="https://img.youtube.com/vi/TNwnS5tJ_80/maxresdefault.jpg" alt="Docu2Risk Demo Video" style="max-width: 720px;">
+  </a>
 </p>
 
 ## Project Context
